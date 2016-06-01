@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		1F492DF91CFC47EB0018422F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492DF81CFC47EB0018422F /* main.m */; };
 		1F492DFC1CFC47EB0018422F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492DFB1CFC47EB0018422F /* AppDelegate.m */; };
-		1F492DFF1CFC47EB0018422F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492DFE1CFC47EB0018422F /* ViewController.m */; };
 		1F492E021CFC47EB0018422F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F492E001CFC47EB0018422F /* Main.storyboard */; };
 		1F492E051CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E031CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodeld */; };
 		1F492E071CFC47EB0018422F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F492E061CFC47EB0018422F /* Assets.xcassets */; };
 		1F492E0A1CFC47EB0018422F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F492E081CFC47EB0018422F /* LaunchScreen.storyboard */; };
+		1F492E161CFC49C10018422F /* AZStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E131CFC49C10018422F /* AZStudent+CoreDataProperties.m */; };
+		1F492E171CFC49C10018422F /* AZStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E151CFC49C10018422F /* AZStudent.m */; };
+		1F492E1D1CFC52450018422F /* AZDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E1C1CFC52450018422F /* AZDataManager.m */; };
+		1F492E201CFC56330018422F /* AZCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E1F1CFC56330018422F /* AZCoreDataViewController.m */; };
+		1F492E221CFC58AC0018422F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F492E211CFC58AC0018422F /* CoreData.framework */; };
+		1F492E261CFEFCD80018422F /* AZStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E251CFEFCD80018422F /* AZStudentsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +26,22 @@
 		1F492DF81CFC47EB0018422F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F492DFA1CFC47EB0018422F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F492DFB1CFC47EB0018422F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F492DFD1CFC47EB0018422F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F492DFE1CFC47EB0018422F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1F492E011CFC47EB0018422F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F492E041CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataHomeTest4144.xcdatamodel; sourceTree = "<group>"; };
 		1F492E061CFC47EB0018422F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F492E091CFC47EB0018422F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F492E0B1CFC47EB0018422F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F492E121CFC49C10018422F /* AZStudent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AZStudent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F492E131CFC49C10018422F /* AZStudent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AZStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F492E141CFC49C10018422F /* AZStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZStudent.h; sourceTree = "<group>"; };
+		1F492E151CFC49C10018422F /* AZStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZStudent.m; sourceTree = "<group>"; };
+		1F492E1B1CFC52450018422F /* AZDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZDataManager.h; sourceTree = "<group>"; };
+		1F492E1C1CFC52450018422F /* AZDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZDataManager.m; sourceTree = "<group>"; };
+		1F492E1E1CFC56330018422F /* AZCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZCoreDataViewController.h; sourceTree = "<group>"; };
+		1F492E1F1CFC56330018422F /* AZCoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZCoreDataViewController.m; sourceTree = "<group>"; };
+		1F492E211CFC58AC0018422F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1F492E241CFEFCD80018422F /* AZStudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZStudentsViewController.h; sourceTree = "<group>"; };
+		1F492E251CFEFCD80018422F /* AZStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZStudentsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F492E221CFC58AC0018422F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,15 +75,15 @@
 		1F492DF61CFC47EB0018422F /* CoreDataHomeTest4144 */ = {
 			isa = PBXGroup;
 			children = (
+				1F492E1A1CFC52210018422F /* CoreData */,
+				1F492E191CFC49E80018422F /* Views */,
+				1F492E181CFC49DC0018422F /* Controllers */,
+				1F492E111CFC49AB0018422F /* Models */,
 				1F492DFA1CFC47EB0018422F /* AppDelegate.h */,
 				1F492DFB1CFC47EB0018422F /* AppDelegate.m */,
-				1F492DFD1CFC47EB0018422F /* ViewController.h */,
-				1F492DFE1CFC47EB0018422F /* ViewController.m */,
-				1F492E001CFC47EB0018422F /* Main.storyboard */,
 				1F492E061CFC47EB0018422F /* Assets.xcassets */,
-				1F492E081CFC47EB0018422F /* LaunchScreen.storyboard */,
 				1F492E0B1CFC47EB0018422F /* Info.plist */,
-				1F492E031CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodeld */,
+				1F492E231CFEFB3A0018422F /* FrameWorks */,
 				1F492DF71CFC47EB0018422F /* Supporting Files */,
 			);
 			path = CoreDataHomeTest4144;
@@ -80,6 +95,55 @@
 				1F492DF81CFC47EB0018422F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F492E111CFC49AB0018422F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F492E121CFC49C10018422F /* AZStudent+CoreDataProperties.h */,
+				1F492E131CFC49C10018422F /* AZStudent+CoreDataProperties.m */,
+				1F492E141CFC49C10018422F /* AZStudent.h */,
+				1F492E151CFC49C10018422F /* AZStudent.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1F492E181CFC49DC0018422F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F492E1E1CFC56330018422F /* AZCoreDataViewController.h */,
+				1F492E1F1CFC56330018422F /* AZCoreDataViewController.m */,
+				1F492E241CFEFCD80018422F /* AZStudentsViewController.h */,
+				1F492E251CFEFCD80018422F /* AZStudentsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1F492E191CFC49E80018422F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F492E001CFC47EB0018422F /* Main.storyboard */,
+				1F492E081CFC47EB0018422F /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1F492E1A1CFC52210018422F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1F492E031CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodeld */,
+				1F492E1B1CFC52450018422F /* AZDataManager.h */,
+				1F492E1C1CFC52450018422F /* AZDataManager.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		1F492E231CFEFB3A0018422F /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				1F492E211CFC58AC0018422F /* CoreData.framework */,
+			);
+			name = FrameWorks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F492DFF1CFC47EB0018422F /* ViewController.m in Sources */,
+				1F492E171CFC49C10018422F /* AZStudent.m in Sources */,
+				1F492E261CFEFCD80018422F /* AZStudentsViewController.m in Sources */,
+				1F492E201CFC56330018422F /* AZCoreDataViewController.m in Sources */,
+				1F492E1D1CFC52450018422F /* AZDataManager.m in Sources */,
+				1F492E161CFC49C10018422F /* AZStudent+CoreDataProperties.m in Sources */,
 				1F492DFC1CFC47EB0018422F /* AppDelegate.m in Sources */,
 				1F492E051CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodeld in Sources */,
 				1F492DF91CFC47EB0018422F /* main.m in Sources */,
