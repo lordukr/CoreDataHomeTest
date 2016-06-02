@@ -13,12 +13,14 @@
 		1F492E051CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E031CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodeld */; };
 		1F492E071CFC47EB0018422F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F492E061CFC47EB0018422F /* Assets.xcassets */; };
 		1F492E0A1CFC47EB0018422F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F492E081CFC47EB0018422F /* LaunchScreen.storyboard */; };
-		1F492E161CFC49C10018422F /* AZStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E131CFC49C10018422F /* AZStudent+CoreDataProperties.m */; };
-		1F492E171CFC49C10018422F /* AZStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E151CFC49C10018422F /* AZStudent.m */; };
 		1F492E1D1CFC52450018422F /* AZDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E1C1CFC52450018422F /* AZDataManager.m */; };
 		1F492E201CFC56330018422F /* AZCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E1F1CFC56330018422F /* AZCoreDataViewController.m */; };
 		1F492E221CFC58AC0018422F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F492E211CFC58AC0018422F /* CoreData.framework */; };
 		1F492E261CFEFCD80018422F /* AZStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E251CFEFCD80018422F /* AZStudentsViewController.m */; };
+		1F492E2E1CFF78660018422F /* AZObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E2A1CFF78660018422F /* AZObject+CoreDataProperties.m */; };
+		1F492E2F1CFF78660018422F /* AZObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E2C1CFF78660018422F /* AZObject.m */; };
+		1F492E341CFF788D0018422F /* AZStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E311CFF788D0018422F /* AZStudent+CoreDataProperties.m */; };
+		1F492E351CFF788D0018422F /* AZStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E331CFF788D0018422F /* AZStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +33,6 @@
 		1F492E061CFC47EB0018422F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F492E091CFC47EB0018422F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F492E0B1CFC47EB0018422F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F492E121CFC49C10018422F /* AZStudent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AZStudent+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1F492E131CFC49C10018422F /* AZStudent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AZStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
-		1F492E141CFC49C10018422F /* AZStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZStudent.h; sourceTree = "<group>"; };
-		1F492E151CFC49C10018422F /* AZStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZStudent.m; sourceTree = "<group>"; };
 		1F492E1B1CFC52450018422F /* AZDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZDataManager.h; sourceTree = "<group>"; };
 		1F492E1C1CFC52450018422F /* AZDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZDataManager.m; sourceTree = "<group>"; };
 		1F492E1E1CFC56330018422F /* AZCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZCoreDataViewController.h; sourceTree = "<group>"; };
@@ -42,6 +40,14 @@
 		1F492E211CFC58AC0018422F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1F492E241CFEFCD80018422F /* AZStudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZStudentsViewController.h; sourceTree = "<group>"; };
 		1F492E251CFEFCD80018422F /* AZStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZStudentsViewController.m; sourceTree = "<group>"; };
+		1F492E291CFF78660018422F /* AZObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AZObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F492E2A1CFF78660018422F /* AZObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AZObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F492E2B1CFF78660018422F /* AZObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZObject.h; sourceTree = "<group>"; };
+		1F492E2C1CFF78660018422F /* AZObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZObject.m; sourceTree = "<group>"; };
+		1F492E301CFF788D0018422F /* AZStudent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AZStudent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F492E311CFF788D0018422F /* AZStudent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AZStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F492E321CFF788D0018422F /* AZStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZStudent.h; sourceTree = "<group>"; };
+		1F492E331CFF788D0018422F /* AZStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +106,14 @@
 		1F492E111CFC49AB0018422F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1F492E121CFC49C10018422F /* AZStudent+CoreDataProperties.h */,
-				1F492E131CFC49C10018422F /* AZStudent+CoreDataProperties.m */,
-				1F492E141CFC49C10018422F /* AZStudent.h */,
-				1F492E151CFC49C10018422F /* AZStudent.m */,
+				1F492E291CFF78660018422F /* AZObject+CoreDataProperties.h */,
+				1F492E2A1CFF78660018422F /* AZObject+CoreDataProperties.m */,
+				1F492E2B1CFF78660018422F /* AZObject.h */,
+				1F492E2C1CFF78660018422F /* AZObject.m */,
+				1F492E301CFF788D0018422F /* AZStudent+CoreDataProperties.h */,
+				1F492E311CFF788D0018422F /* AZStudent+CoreDataProperties.m */,
+				1F492E321CFF788D0018422F /* AZStudent.h */,
+				1F492E331CFF788D0018422F /* AZStudent.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -216,12 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F492E171CFC49C10018422F /* AZStudent.m in Sources */,
 				1F492E261CFEFCD80018422F /* AZStudentsViewController.m in Sources */,
 				1F492E201CFC56330018422F /* AZCoreDataViewController.m in Sources */,
+				1F492E351CFF788D0018422F /* AZStudent.m in Sources */,
 				1F492E1D1CFC52450018422F /* AZDataManager.m in Sources */,
-				1F492E161CFC49C10018422F /* AZStudent+CoreDataProperties.m in Sources */,
 				1F492DFC1CFC47EB0018422F /* AppDelegate.m in Sources */,
+				1F492E2F1CFF78660018422F /* AZObject.m in Sources */,
+				1F492E341CFF788D0018422F /* AZStudent+CoreDataProperties.m in Sources */,
+				1F492E2E1CFF78660018422F /* AZObject+CoreDataProperties.m in Sources */,
 				1F492E051CFC47EB0018422F /* CoreDataHomeTest4144.xcdatamodeld in Sources */,
 				1F492DF91CFC47EB0018422F /* main.m in Sources */,
 			);
@@ -372,6 +384,7 @@
 				1F492E101CFC47EB0018422F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

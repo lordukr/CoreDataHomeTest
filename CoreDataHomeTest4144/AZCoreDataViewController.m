@@ -36,11 +36,11 @@
     if (!_managedObjectContext) {
         _managedObjectContext = [[AZDataManager sharedManager] managedObjectContext];
     }
-    
-    for (int i = 0; i <101; i++) {
+    /*
+    for (int i = 0; i <200; i++) {
         [[AZDataManager sharedManager] addRandomStudent];
     }
-    
+     */
     return _managedObjectContext;
 }
 

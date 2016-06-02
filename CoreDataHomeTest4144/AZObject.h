@@ -1,5 +1,5 @@
 //
-//  AZStudent.h
+//  AZObject.h
 //  CoreDataHomeTest4144
 //
 //  Created by My mac on 01.06.16.
@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AZObject.h"
+#import <CoreData/CoreData.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AZStudent : AZObject
+@interface AZObject : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
 
@@ -19,4 +19,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#import "AZStudent+CoreDataProperties.h"
+#import "AZObject+CoreDataProperties.h"

@@ -65,7 +65,7 @@ static NSString* lastNames[] = {
     }
 }
 
-- (AZStudent *)addRandomStudent {
+- (AZStudent*) addRandomStudent {
     
     AZStudent* student = [NSEntityDescription insertNewObjectForEntityForName:@"AZStudent" inManagedObjectContext:self.managedObjectContext];
     
@@ -74,6 +74,34 @@ static NSString* lastNames[] = {
     student.email = @"test@test.com";
     
     return student;
+}
+
+- (void) deleteAllObjects {
+    NSArray* allObjects = [self allObjects];
+    
+    for (id object in allObjects) {
+        [self.managedObjectContext deleteObject:object];
+    }
+    [self.managedObjectContext save:nil];
+}
+
+- (NSArray*) allObjects {
+    
+    NSFetchRequest* request = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription* description =
+    [NSEntityDescription entityForName:@"AZObject"
+                inManagedObjectContext:self.managedObjectContext];
+    
+    [request setEntity:description];
+    
+    NSError* requestError = nil;
+    NSArray* resultArray = [self.managedObjectContext executeFetchRequest:request error:&requestError];
+    if (requestError) {
+        NSLog(@"%@", [requestError localizedDescription]);
+    }
+    
+    return resultArray;
 }
 
 #pragma mark - Core Data stack

@@ -1,5 +1,5 @@
 //
-//  AZStudent+CoreDataProperties.m
+//  AZObject+CoreDataProperties.m
 //  CoreDataHomeTest4144
 //
 //  Created by My mac on 01.06.16.
@@ -9,12 +9,9 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "AZStudent+CoreDataProperties.h"
+#import "AZObject+CoreDataProperties.h"
 
-@implementation AZStudent (CoreDataProperties)
+@implementation AZObject (CoreDataProperties)
 
-@dynamic email;
-@dynamic firstName;
-@dynamic lastName;
 
 @end
