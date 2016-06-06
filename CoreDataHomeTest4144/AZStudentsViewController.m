@@ -9,8 +9,12 @@
 #import "AZStudentsViewController.h"
 #import "AZStudent.h"
 #import "AZDataManager.h"
+#import "AZStudentDetailsViewController.h"
+#import "AZStudentDataModel.h"
 
 @interface AZStudentsViewController ()
+
+@property(strong, nonatomic) AZStudent* tempStudent;
 
 @end
 
@@ -69,35 +73,78 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 
-- (void) addStudent {
+- (void) saveObjectWithDataModel:(AZStudentDataModel*) studentModel {
     //NSManagedObjectContext* context = [self.fetchedResultsController managedObjectContext];
+    AZStudent* tempStudent;
+    if (self.tempStudent) {
+        tempStudent = self.tempStudent;
+        self.tempStudent = nil;
+    } else {
+        tempStudent = [NSEntityDescription insertNewObjectForEntityForName:@"AZStudent" inManagedObjectContext:self.managedObjectContext];
+    }
     
-    AZStudent* student = [NSEntityDescription insertNewObjectForEntityForName:@"AZStudent" inManagedObjectContext:self.managedObjectContext];
-    student.firstName = @"New";
-    student.lastName = @"Manual";
-    student.email = @"test2test.com";
+    tempStudent.firstName = studentModel.firstName;
+    tempStudent.lastName = studentModel.lastName;
+    tempStudent.email = studentModel.email;
     
     NSError* error = nil;
+    
     [self.managedObjectContext save:&error];
+    
     if (error) {
         NSLog(@"ERROR!!!! %@", error.localizedDescription);
     }
     
 }
 
+- (id) getViewControllerWithClassName:(NSString*) className {
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController* view = [storyboard instantiateViewControllerWithIdentifier:className];
+    
+    return view;
+}
+
 #pragma mark - Actions 
 
 - (void) actionAdd:(UIBarButtonItem*) button {
-    NSLog(@"barItemClicked");
-    [self addStudent];
+    
+    AZStudentDetailsViewController* vc = [self getViewControllerWithClassName:NSStringFromClass([AZStudentDetailsViewController class])];
+    
+    void(^studentBlock)(AZStudentDataModel*) = ^(AZStudentDataModel* student) {
+        [self saveObjectWithDataModel:student];
+    };
+    
+    vc.block = studentBlock;
+    
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%lu", indexPath.row);
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    AZStudent* student = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    self.tempStudent = student;
+    
+    AZStudentDataModel* studentDomainModel = [[AZStudentDataModel alloc] init];
+    studentDomainModel.firstName = student.firstName;
+    studentDomainModel.lastName = student.lastName;
+    studentDomainModel.email = student.email;
+    
+    
+    AZStudentDetailsViewController* vc = [self getViewControllerWithClassName:NSStringFromClass([AZStudentDetailsViewController class])];
+    void(^studentBlock)(AZStudentDataModel*) = ^(AZStudentDataModel* student) {
+        [self saveObjectWithDataModel:student];
+    };
+    
+    vc.block = studentBlock;
+    vc.studentDataModel = studentDomainModel;
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 @end

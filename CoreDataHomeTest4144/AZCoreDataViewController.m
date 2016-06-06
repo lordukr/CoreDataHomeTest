@@ -36,11 +36,7 @@
     if (!_managedObjectContext) {
         _managedObjectContext = [[AZDataManager sharedManager] managedObjectContext];
     }
-    /*
-    for (int i = 0; i <200; i++) {
-        [[AZDataManager sharedManager] addRandomStudent];
-    }
-     */
+
     return _managedObjectContext;
 }
 
@@ -75,6 +71,7 @@
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     return YES;
 }
 

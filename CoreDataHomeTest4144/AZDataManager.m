@@ -76,6 +76,17 @@ static NSString* lastNames[] = {
     return student;
 }
 
+- (AZStudent*) addStudentWithName:(NSString*) firstName andlastName:(NSString*) lastName andEail:(NSString*) email {
+    
+    AZStudent* student = [NSEntityDescription insertNewObjectForEntityForName:@"AZStudent" inManagedObjectContext:self.managedObjectContext];
+    
+    student.firstName = firstName;
+    student.lastName = lastName;
+    student.email = email;
+    
+    return student;
+}
+
 - (void) deleteAllObjects {
     NSArray* allObjects = [self allObjects];
     

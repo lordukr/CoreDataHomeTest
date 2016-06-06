@@ -21,6 +21,8 @@
 		1F492E2F1CFF78660018422F /* AZObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E2C1CFF78660018422F /* AZObject.m */; };
 		1F492E341CFF788D0018422F /* AZStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E311CFF788D0018422F /* AZStudent+CoreDataProperties.m */; };
 		1F492E351CFF788D0018422F /* AZStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F492E331CFF788D0018422F /* AZStudent.m */; };
+		1FB231A71D01E5370001E2A2 /* AZStudentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB231A61D01E5370001E2A2 /* AZStudentDetailsViewController.m */; };
+		1FCF7D6F1D05E5D6009ABC6B /* AZStudentDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF7D6E1D05E5D6009ABC6B /* AZStudentDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,10 @@
 		1F492E311CFF788D0018422F /* AZStudent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AZStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
 		1F492E321CFF788D0018422F /* AZStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZStudent.h; sourceTree = "<group>"; };
 		1F492E331CFF788D0018422F /* AZStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZStudent.m; sourceTree = "<group>"; };
+		1FB231A51D01E5370001E2A2 /* AZStudentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZStudentDetailsViewController.h; sourceTree = "<group>"; };
+		1FB231A61D01E5370001E2A2 /* AZStudentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZStudentDetailsViewController.m; sourceTree = "<group>"; };
+		1FCF7D6D1D05E5D6009ABC6B /* AZStudentDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZStudentDataModel.h; path = ../AZStudentDataModel.h; sourceTree = "<group>"; };
+		1FCF7D6E1D05E5D6009ABC6B /* AZStudentDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZStudentDataModel.m; path = ../AZStudentDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +90,10 @@
 				1F492E1A1CFC52210018422F /* CoreData */,
 				1F492E191CFC49E80018422F /* Views */,
 				1F492E181CFC49DC0018422F /* Controllers */,
-				1F492E111CFC49AB0018422F /* Models */,
+				1F492E111CFC49AB0018422F /* Entities */,
 				1F492DFA1CFC47EB0018422F /* AppDelegate.h */,
 				1F492DFB1CFC47EB0018422F /* AppDelegate.m */,
+				1FCF7D711D05EE3E009ABC6B /* Models */,
 				1F492E061CFC47EB0018422F /* Assets.xcassets */,
 				1F492E0B1CFC47EB0018422F /* Info.plist */,
 				1F492E231CFEFB3A0018422F /* FrameWorks */,
@@ -103,7 +110,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1F492E111CFC49AB0018422F /* Models */ = {
+		1F492E111CFC49AB0018422F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				1F492E291CFF78660018422F /* AZObject+CoreDataProperties.h */,
@@ -115,7 +122,7 @@
 				1F492E321CFF788D0018422F /* AZStudent.h */,
 				1F492E331CFF788D0018422F /* AZStudent.m */,
 			);
-			name = Models;
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		1F492E181CFC49DC0018422F /* Controllers */ = {
@@ -125,6 +132,8 @@
 				1F492E1F1CFC56330018422F /* AZCoreDataViewController.m */,
 				1F492E241CFEFCD80018422F /* AZStudentsViewController.h */,
 				1F492E251CFEFCD80018422F /* AZStudentsViewController.m */,
+				1FB231A51D01E5370001E2A2 /* AZStudentDetailsViewController.h */,
+				1FB231A61D01E5370001E2A2 /* AZStudentDetailsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +163,15 @@
 				1F492E211CFC58AC0018422F /* CoreData.framework */,
 			);
 			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		1FCF7D711D05EE3E009ABC6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FCF7D6D1D05E5D6009ABC6B /* AZStudentDataModel.h */,
+				1FCF7D6E1D05E5D6009ABC6B /* AZStudentDataModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,11 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCF7D6F1D05E5D6009ABC6B /* AZStudentDataModel.m in Sources */,
 				1F492E261CFEFCD80018422F /* AZStudentsViewController.m in Sources */,
 				1F492E201CFC56330018422F /* AZCoreDataViewController.m in Sources */,
 				1F492E351CFF788D0018422F /* AZStudent.m in Sources */,
 				1F492E1D1CFC52450018422F /* AZDataManager.m in Sources */,
 				1F492DFC1CFC47EB0018422F /* AppDelegate.m in Sources */,
+				1FB231A71D01E5370001E2A2 /* AZStudentDetailsViewController.m in Sources */,
 				1F492E2F1CFF78660018422F /* AZObject.m in Sources */,
 				1F492E341CFF788D0018422F /* AZStudent+CoreDataProperties.m in Sources */,
 				1F492E2E1CFF78660018422F /* AZObject+CoreDataProperties.m in Sources */,
